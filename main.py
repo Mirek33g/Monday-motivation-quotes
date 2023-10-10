@@ -1,15 +1,17 @@
 import datetime as dt
 import smtplib
 import random
+# all libraries 
 
-
+# using email details 
 my_email ="first.steps.coding@gmail.com"
 password = "rtai ojdb ienr waec"
 
-
+# created daysobject
 now = dt.datetime.now()
 today_is = now.weekday()
 
+# checked todays day, read file and sent email with a quote
 if today_is == 1:
     rand_quote = random.choice(list(open("quotes.txt")))
 
